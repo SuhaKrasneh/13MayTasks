@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #1</title>
+</head>
+<style>
+    .parent {
+border: 2px dotted black;
+display: inline-block;
+position: relative;
+}
+.box, .two, .two1,.two2 {
+display: inline-block;
+background: red;
+width: 100px;
+height: 100px;
+}
+.two{
+    background: green;
+    /*simply if we want to show them like live every type chane the position below*/
+    position: static;
+
+}
+.two1{
+    background: green;
+    top: 20px;
+    left: 20px;
+    position: relative;
+}
+.two2{
+    background: green;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+}
+</style>
+<body>
+    <h3> position: static</h3>
+    <div class="parent">
+        <div class="box"> One</div>
+        <div class="two"> Two</div>
+        <div class="box"> Three</div>
+        <div class="box"> Four</div>
+    </div>
+    <br><br>
+    <h3> position: relative</h3>
+    <div class="parent">
+        <div class="box"> One</div>
+        <div class="two1"> Two</div>
+        <div class="box"> Three</div>
+        <div class="box"> Four</div>
+    </div> 
+    <h3> position: absolute</h3>
+    <div class="parent">
+        <div class="box"> One</div>
+        <div class="two2">Two</div>
+        <div class="box">Three</div>
+        <div class="box"> Four</div>
+    </div>
+    <br><br> 
+</body>
+</html>
